@@ -1,0 +1,29 @@
+{
+  "name": "modules",
+  "version": "1.0.0",
+  "description": "DOUBT CLARIFICATION AND LIVE CLASSES",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vamshi3458/MODULES.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vamshi3458/MODULES/issues"
+  },
+  "homepage": "https://github.com/vamshi3458/MODULES#readme",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "multer": "^2.0.2",
+    "mysql2": "^3.17.4",
+    "node-cron": "^4.2.1"
+  }
+}
