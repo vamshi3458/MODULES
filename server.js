@@ -3,6 +3,7 @@ const express = require("express");
 const cron = require("node-cron");
 const cors = require("cors");
 const db = require("./config/db");
+const liveRoutes = require("./routes/liveClassRoutes");
 
 const doubtRoutes = require("./routes/doubtRoutes");
 
@@ -13,6 +14,7 @@ app.use(express.json());
 app.use("/uploads", express.static("uploads"));
 
 app.use("/api/doubts", doubtRoutes);
+app.use("/api/live", liveRoutes);
 
 // Auto expire job
 cron.schedule("0 * * * *", async () => {
